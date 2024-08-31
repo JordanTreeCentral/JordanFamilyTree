@@ -6,60 +6,95 @@
 
 <head>
    <style>
-      .myHead {
-         border: 5px outset red;
-         margin: auto;
-         background-color: lightblue;
-         text-align: center;
-      }
+      
+    .tree {
+      background-color: lightblue;
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
+    .header {
+      position: fixed;
+      width: 100%;
+      height: 60px;
+      background-color: red;
+      text-align: center;
+      top: 0;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    .myImg {
+      border: 5px outset red;
+      width: 100%;
+      height: 120px;
+      margin: auto;
+      margin-top: 30px;
+      background-color: rgb(115, 55, 55);
+      text-align: center;
+    }
+
+ 
    </style>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta "viewport" content="width=device-width, initial-scale=1.0">
    <meta name="author" content="Gerald Hayes">
-   <title>Jordan Family Tree</title>
+   <title>The Jordan Family</title>
 </head>
 
 
 <BODY>
-   <div class="myHead">
+   <div class="header">
+
       <h1>
-
-         <center><img src="./Assets/jordanFamilyLogoCROPED.png" alt="Jordan Family Tree Logo" /></center>
-         <br>
-         <center>The Jordan Family Tree</center>
+        <center>The Jordan Family</center>
       </h1>
-   </div>
-   <p>
-
-      <a href="./HTML/theEntireTree.html" title="Click to see the entire Jordan tree" target="_blank"> Click to see the
-         entire Jordan tree </a>
+    </div>
       <br>
 
-      <a href="./HTML/Walter_Jordan_Tree.html" title="Click to see the Walter Jordan hourglass tree" target="_blank">
-         Click to see the Walter Jordan hourglass tree </a>
-      <br>
+      <div class="myImg">
+         <center><img src="./Assets/jordanFamilyLogoCROPED.png" alt="Jordan Family Tree Logo" width="400" height="120">
+         </center>
 
-      <a href="./HTML/Evelina_Jordan_Tree.html" title="Click to see the Evelina Jordan hourglass tree" target="_blank">
-         Click to see the Evelina Jordan hourglass tree </a>
-      <br>
-
-      <a href="./HTML/Vera_Yvonne_Jordan_Tree.html" title="Click to see the Vera Yvonne Jordan hourglass tree"
-         target="_blank"> Click to see the Vera Yvonne Jordan hourglass tree </a>
-      <br>
-
-      <a href="./HTML/Willie_Dee_Jordan_Tree.html" title="Click to see the Willie Dee Jordan hourglass tree"
-         target="_blank"> Click to see the Willie Dee Jordan hourglass tree </a>
-      <br>
-
-      <a href="./HTML/Woodsy_Mae_Jordan_Tree.html" title="Click to see the Woodsy Mae Jordan hourglass tree"
-         target="_blank"> Click to see the Woodsy Mae Jordan hourglass tree </a>
-      <br>
-
-      <a href="./HTML/Lula_Beatrice_Jordan_Tree.html" title="Click to see the Lula Beatrice Jordan hourglass tree"
-         target="_blank"> Click to see the Lula Beatrice Jordan hourglass tree </a>
-      <br>
-
+         </div>
+         <br>
+ 
+         <div class="container">
+            <p>
+              Click to see  
+              <a href="./HTML/theEntireTree.html" title="Click to see the entire Jordan tree" target="_blank"> the entire Jordan tree </a>
+            </p>
+      
+              <p>
+                Click on the name below to see their hourglass tree: 
+            </p>
+            <p style="margin-left: 30px;">
+                    <!-- <p style="text-indent:30px;"> -->
+      
+              <a href="./HTML/Walter_Jordan_Tree.html" title="Click to see the Walter Jordan hourglass tree" target="_blank">Walter Jordan</a>
+              <br>
+      
+              <a href="./HTML/Evelina_Jordan_Tree.html" title="Click to see the Evelina Jordan hourglass tree"
+                target="_blank">Evelina Jordan</a>
+              <br>
+      
+              <a href="./HTML/Vera_Yvonne_Jordan_Tree.html" title="Click to see the Vera Yvonne Jordan hourglass tree"
+                target="_blank">Vera Yvonne Jordan</a>
+              <br>
+      
+              <a href="./HTML/Willie_Dee_Jordan_Tree.html" title="Click to see the Willie Dee Jordan hourglass tree"
+                target="_blank">Willie Dee Jordan</a>
+              <br>
+      
+              <a href="./HTML/Woodsy_Mae_Jordan_Tree.html" title="Click to see the Woodsy Mae Jordan hourglass tree"
+                target="_blank"> Woodsy Mae Jordan</a>
+              <br>
+      
+            </p>
+          </div>
+ 
    </p>
 
 </BODY>
