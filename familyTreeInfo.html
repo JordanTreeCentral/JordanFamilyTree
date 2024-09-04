@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<HTML>
+
+<html lang="en">
+
+<head>
+    <style>
+        .tree {
+            background-color: lightblue;
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            background-color: red;
+            text-align: center;
+            top: 0;
+        }
+
+        .container {
+            margin-top: 40px;
+        }
+
+        .myImg {
+            border: 5px outset red;
+            width: 100%;
+            height: 120px;
+            margin: auto;
+            margin-top: 30px;
+            background-color: rgb(115, 55, 55);
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta "viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gerald Hayes">
+    <title>Providing Family Data</title>
+</head>
+
+
+<BODY>
+    <div class="header">
+
+        <h1>
+            <center>Providing Family Data</center>
+        </h1>
+    </div>
+    <br>
+    <div class="container">
+        <h2>
+            Details for providing family tree data
+        </h2>
+       
+        <p>See: <a href="./definition_of_family_tree_terms.html" title="Click to see the Definition of terms used for the family tree" target="_blank">Definition of terms used for the family tree</a>
+            <br>
+        </p>
+
+
+        <p>The Priorities for data collection are:
+        </p>
+        <p>
+        <UL>
+            <li> "R" for required.</li>
+            <li> "C" for conditional depending on cases.</li>
+            <li> "P" for priority optional data.</li>
+            <li> "O" for optional data.</li>
+        </UL>
+        </p>
+        <p>The data that can be collected in the database:
+        </p>
+        <table style="width:95%">
+            <tr>
+                <th>Data Title</th>
+                <th>Description</th>
+                <th>Priority R,C,P,O</th>
+            </tr>
+            <tr>
+                <td>Type</td>
+                <td>Person's sex; male or female</td>
+                <td>R</td>
+            </tr>
+
+            <tr>
+                <td>FirstName</td>
+                <td>
+                    <p>A combination of the 'Given Names': FirstName + MiddleName.</p>
+                    <p>Can include a NickName in quotes to create a unique identifier in cases where there are identical
+                        FirstName + MiddleName + LastName in the tree.</p>
+                    <p>Some names in the tree can be place holders for people known to exist but the actual name is unknown. The name can contain place holder (TBD) names.</p>
+                </td>
+                <td>R</td>
+            </tr>
+
+            <tr>
+                <td>LastName</td>
+                <td>Can contain place holder (TBD) names.</td>
+                <td>R</td>
+            </tr>
+            <tr>
+                <td>Suffix</td>
+                <td>Capture suffix given at birth. Typically "Jr." or "II" or the like. Ignore "Sr", since that is
+                    implied
+                    but not the formal name.</td>
+                <td>R</td>
+            </tr>
+ 
+            <tr>
+                <td>Nickname</td>
+                <td>Nickname can be helpful in uniquely identifing the person. A Nickname will be very  helpful in any occurance of identical full names ("FirstName + MiddleName + LastName + suffix"). The NickName can be added as "FirstName + MiddleName + "NickName" + LastName + suffix".</td>
+                <td>P</td>
+            </tr>
+
+
+            <tr>
+                <td>Parent1</td>
+                <td>The Priority for Parent1 has cases:<br>
+                    <ul>
+                        <li>Direct Descendant person: Required.</li>
+                        <li>Spouse of a Direct Descendant: Optional.</li>
+                        <li>Direct Descendants' recognized Stepchild: Required and must be the Direct Descendants'
+                            Spouse.
+                        </li>
+                    </ul>
+                </td>
+                <td>C</td>
+            </tr>
+
+            <tr>
+                <td>Parent2</td>
+                <td>The Priority for Parent2 has cases:<br>
+                    <ul>
+                        <li>Direct Descendant person: Required.</li>
+                        <li>Spouse of a Direct Descendant: Optional.</li>
+                        <li>Direct Descendants' recognized Stepchild: Optional.</li>
+                    </ul>
+                </td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>Spouse</td>
+                <td>A Spouse can be a marriage partner or a parenting relationship.</td>
+                <td>R</td>
+            </tr>
+
+
+            <tr>
+                <td>BirthDate</td>
+                <td>Any inforrmation known. Prefer Month-Day-Year but anything helps fill in the tree.</td>
+                <td>P</td>
+            </tr>
+            <tr>
+                <td>DeathDate</td>
+                <td>Prefer Month-Day-Year but anything helps fill in the tree. NOTE: A copy of Obituary can be included
+                    in
+                    the website.</td>
+                <td>P</td>
+            </tr>
+
+
+            <tr>
+                <td>Photo</td>
+                <td>Copy of the persons' photo.</td>
+                <td>P</td>
+            </tr>
+
+            <tr>
+                <td>Title</td>
+                <td> Professional prefixes are not particularly helpful for the tree but can be part of the person's
+                    narrative story.</td>
+                <td>O</td>
+            </tr>
+
+
+            <tr>
+                <td>Birth place</td>
+                <td>Helps with records search.</td>
+                <td>O</td>
+            </tr>
+
+
+            <tr>
+                <td>Birth source</td>
+                <td>Copy of Birth Certificate or other documentation. Helps with records search. Can be included in
+                    persons'
+                    narrative story.</td>
+                <td>O</td>
+            </tr>
+
+            <tr>
+                <td>MarriageDate</td>
+                <td>Helps with records search. Can be included in persons' narrative story.</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>Marriage Place</td>
+                <td>Helps with records search. Can be included in persons' narrative story.</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>Marriage source</td>
+                <td>Copy of ertificates or other documentation. Helps with records search. Can be included in persons'
+                    narrative story.</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>Death place</td>
+                <td>Helps with records search.</td>
+                <td>O</td>
+            </tr>
+
+
+            <tr>
+                <td>Death source</td>
+                <td>Copy of Death Certificate or other documentation. Helps with records search. Can be included in
+                    persons'
+                    narrative story.</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>Burial date</td>
+                <td>Prefer Month-Day-Year but anything helps fill in the tree. Typically addressed within an Obituary.
+                    Helps
+                    with records search. Can be included in persons' narrative story.</td>
+                <td>O</td>
+            </tr>
+
+            <tr>
+                <td>Burial place</td>
+                <td>Typically addressed within an Obituary. Helps with records search. Can be included in persons'
+                    narrative
+                    story.</td>
+                <td>O</td>
+            </tr>
+
+
+            <tr>
+                <td>Burial source</td>
+                <td>Copy of Death Certificate or other documentation. Helps with records search. Can be included in
+                    persons'
+                    narrative story.</td>
+                <td>O</td>
+            </tr>
+
+        </table>
+
+        <p>
+            Take a look at the Jordan Family Trees on the home page. If you see anything that needs to change or be
+            added, let me know by sending an me an email.
+        </p>
+        <p>
+            Also if anyone is interested in helping to expand the family tree let me know.
+        </p>
+
+        <p><a href="mailto:gehayes1@gmail.com">Email Gerald Hayes</a><br></p>
+
+
+        <p> One step at a time folks!</p>
+    </div>
+
+</BODY>
+
+</HTML>
